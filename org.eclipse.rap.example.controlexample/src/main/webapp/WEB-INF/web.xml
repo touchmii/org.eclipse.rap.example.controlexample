@@ -26,4 +26,10 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns
     <servlet-name>rwtServlet</servlet-name>
     <url-pattern>/hello</url-pattern>
   </servlet-mapping>
+  
+    <servlet-mapping>
+    <servlet-name>rwtServlet</servlet-name>
+    <url-pattern>/image</url-pattern>
+  </servlet-mapping>
+  
 </web-app> 
