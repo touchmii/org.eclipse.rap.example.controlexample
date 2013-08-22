@@ -62,10 +62,8 @@ public class BasicApplication implements ApplicationConfiguration {
 
 	public void configure(Application application) {
 		TabrisClientInstaller.install(application);
-		((ApplicationImpl) application)
-				.addClientProvider(new CustomTabrisClientProvider());
-		application.addStyleSheet(THEME_ID_SWT, "theme-swt-macos.css",
-				new ResourceLoaderImpl());
+		((ApplicationImpl) application).addClientProvider(new CustomTabrisClientProvider());
+		application.addStyleSheet(THEME_ID_SWT, "theme-swt-macos.css",new ResourceLoaderImpl());
 		application.addEntryPoint("/hello", BasicEntryPoint.class, null);
 		application.addEntryPoint("/image", ImageEntryPoint.class, null);
 	}
